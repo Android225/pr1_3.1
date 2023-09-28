@@ -11,7 +11,7 @@ import com.example.pr1.R
 
 
 
-class MainFragment : Fragment() {
+class Fragment2 : Fragment() {
 
 
     override fun onCreateView(
@@ -19,14 +19,14 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        return inflater.inflate(R.layout.fragment_2, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val frag_2 = view.findViewById<Button>(R.id.frag_2)
+        val frag_3 = view.findViewById<Button>(R.id.frag_3)
         val controller = findNavController()
-        frag_2.setOnClickListener{ controller.navigate(R.id.fragment2) }
+        frag_3.setOnClickListener{ controller.navigate(R.id.fragment3) }
     }
 
 }
